@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link rel="stylesheet" href="Contact.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="all.js"></script>
+    <style>#newsletter h4{
+        font-size: 22px;
+        font-weight: 600;
+        color: #818ea0;
+    }</style>
+  </head>
+  <body>
+    <!--header starts-->
+    <section id="header">
+      <a href="#"><img src="/img/logo.jpg" class="logo" alt="" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Products.html">Products</a></li>
+          <li><a href="Research.html">Research</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a class="active" href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </section>
+    <!--banner-->
+    <section id="page-header" class="blog-header">
+      <h2 style="font-size: 50px; font-weight: 800; color: #fff;">#Let's_talk</h2>
+      <p style="color: #fff; font-weight: 800">!!LEAVE A MESSAGE, We love to hear from you!!</p>
+    </section>
+   <section id="contact-details" class="section-p1">
+    <div class="details">
+      <span>GET IN TOUCH</span>
+      <h2>Contact us</h2>
+      <h3>Head Office</h3>
+      <div>
+        <li>
+          <i class="fa-solid fa-location-pin"></i>
+          <p>Biratnagar-03, Morang, Nepal</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <p>achyutp10@gmail.com</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <p>021-462768/(+977) 9812896540</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-clock"></i>
+          <p>09:00-18:00, 24/7</p>
+        </li>
+      </div>
+    </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6362.731832513961!2d87.27474532721133!3d26.48915295071208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef744704331cc5%3A0x6d9a85e45c54b3fc!2sBiratnagar%2056613!5e0!3m2!1sen!2snp!4v1653661565100!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </section>
+    <!--Form Starts-->
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>LOGIN</h2>
+                    <form name="messageform" onsubmit="validateForm()">
+                        <input type="email" name="email" class="input-box" placeholder="Your Email ID" required>
+                        <input type="password" name="password" class="input-box" placeholder="password" required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                     <button type="button" class="btn" onclick="openRegister()">I'm new here</button>
+                     <a href="">Forget password</a>
+                </div>
+                <div class="card-back">
+                <h2>REGISTER</h2>
+                    <form>
+                        <input type="text" class="input-box" placeholder="Your Name" required>
+                        <input type="email" class="input-box" placeholder="Your Email ID" required>
+                        <input type="password" class="input-box" placeholder="password" required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                     <button type="button" class="btn" onclick="openLogin()">I've an account</button>
+                     <a href="">Forget password</a>
+                    </div>
+            </div>
+        </div>        
+    </div>  
+    <!--javascript for rotating the login form to register and vice versa-->
+     <script>
+         var card = document.getElementById("card");
+         function openRegister(){
+             card.style.transform = "rotateY(180deg)";
+         }
+         function openLogin(){
+             card.style.transform = "rotateY(0deg)";
+         }
+     </script>
+    <!--newsletter starts-->
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get E-mail updates about our
+          <span>latest arrivals and special offers</span>
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your Email Address" />
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+    <!--footer starts-->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="/img/logo.jpg" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>Biratnagar-03, Morang, Nepal</p>
+            <p><strong>Phone:</strong>021-462768/(+977) 9812896540</p>
+            <p><strong>Hours:</strong>09:00-18:00, 24/7</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://www.facebook.com/profile.php?id=100076401679911"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/achyutp_"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/achyutparajuli_/tagged/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCv2C1jk-ju9TUNoYqeB1EZg/featured"><i class="fa-brands fa-youtube"></i></a>
+                    <i class="fa-brands fa-reddit"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Accounts</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="/img/googleplay.jpg" alt="">
+                <img src="/img/appstore.jpg" alt="">
+            </div>
+            <p>Secured Payments Gateways</p>
+            <img src="/img/cards.jpg" alt="">
+        </div>
+        <div class="copyright">
+            <p>&copy 2022, PhoneLinks - E-commerce Website</p>
+        </div>
+    </footer>
+  </body>
+</html>
